@@ -1,7 +1,5 @@
-class Article < ApplicationRecord
-    validates :title, presence: true
-    validates :body, presence: true, length: { minimum: 10 }
-  end
+class User < ApplicationRecord
 
-    
-  
+    validates :name, presence: true
+    validates :password, presence: true, length: { minimum: 3 }
+end
